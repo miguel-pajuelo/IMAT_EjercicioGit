@@ -19,7 +19,7 @@
 
         static double? Divide(int a, int b)
         {
-            if (b == 0) { return "Error division por cero"}
+            if (b == 0) { return $"Error division por cero. Valores {a}/{b}"}
             return a / b;
         }
     }
