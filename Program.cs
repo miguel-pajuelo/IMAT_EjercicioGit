@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine($"{Subtract(2, 8)}");
+            Console.WriteLine($"{Divide(2, 8)}");
         }
 
         static int Add(int a, int b)
@@ -17,8 +17,9 @@
             return (a * b);
         }
 
-        static int Subtract(int a, int b)
+        static double? Divide(int a, int b)
         {
-            return a - b;
+            if (b == 0) { return $"Error division por cero. Valores {a}/{b}"}
+            return a / b;
         }
     }
