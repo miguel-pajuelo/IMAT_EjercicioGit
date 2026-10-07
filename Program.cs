@@ -4,11 +4,16 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine($"{Add(2, 8)}");
+            Console.WriteLine($"{Multiply(2, 8)}");
         }
 
         static int Add(int a, int b)
         {
             return a + b;
+        }
+
+        static int Multiply(int a, int b)
+        { 
+            return (a * b);
         }
 }
